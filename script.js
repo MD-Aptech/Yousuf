@@ -56,7 +56,7 @@ $(document).ready(function() {
         loop: true,
         autoplay: true,
         autoplayTimeOut: 2000,
-        autoplayHoverPause: false,
+        autoplayHoverPause: true,
         responsive: {
             0: {
                 items: 1,
@@ -74,26 +74,12 @@ $(document).ready(function() {
     });
 });
 
-$('.owl-carousel').owlCarousel({
-    autoplay: false,  // Disable auto-play
-    loop: false,      // Optionally disable looping if you want
-    nav: true,
-    // other settings
-});
-$('.owl-carousel').owlCarousel({
-    autoplay: false,  // Disable auto-play
-    loop: false,      // Optionally disable looping if you want
-    nav: true,
-    // other settings
-});
 // cv download work
-
-
 
 function downloadCV() {
     var link = document.createElement('a');
-    link.setAttribute('href', 'DaniyalJavadia.pdf');
-    link.setAttribute('download', 'DaniyalJavadia.pdf');
+    link.setAttribute('href', 'Yousuf_resume.pdf');
+    link.setAttribute('download', 'Yousuf.pdf');
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
